@@ -56,43 +56,27 @@ section {
 .sec1{
     display: none;
     transform: translateY(0) scale (1);
-    background-color:rgba(161, 228, 38, 0.849);
 }
 
 .sec2{
     display: none;
     transform: translateY(0) scale (1);
-    background-color: slateblue;
 }
 .sec3{
     display: none;
     transform: translateY(0) scale (1);
-    background-color: rgba(18, 113, 23, 0.759);
 }
 
 .sec4{
     display: none;
     transform: translateY(0) scale (1);
-    background-color: rgb(160, 6, 132);
 }
 
 .sec5{
     display: none;
     transform: translateY(0) scale (1);
-    background-color: rgb(93, 8, 24);
 }
 
-.active {
-    display:block;
-    animation: scaleAni 1s ease-in-out;
-    @keyframes scaleAnim{
-        0%{
-        transform: translateY(-100%) scaleY(0)}
-        100%{
-        transform: translateY(-100%) scaleY(1)
-        }
-    } 
-}
 /*Controls*/
 
 .controls {
@@ -105,26 +89,28 @@ section {
     align-items: center;
     justify-content: center;
     transform: translateY(-50%);
+    .active-btn{
+        background-color: var(--color-green-1) !important;
+        transition: all .4s ease-in-out;
+     }    
+    .control{
+        padding: 1rem;
+        cursor: pointer;
+        background-color: var(--color-green-0);
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: .7rem 0;
+        box-shadow: var(--box-shadow-1);
+        i{
+            font-size: 1.2 rem;
+            color: var(--color-eggshell);
+            pointer-events: none;
+        }
+    }
 }
-/* .active-btn{
-    background-color: var(--color-green-1) !important;
-    transition: all .4s ease-in-out;
- } */
-.control{
-    padding: 1rem;
-    cursor: pointer;
-    background-color: var(--color-green-0);
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: .7rem 0;
-    box-shadow: var(--box-shadow-1);
-}
-i{
-    font-size: 1.2 rem;
-    color: var(--color-eggshell);
-    pointer-events: none;
-}
+
+
