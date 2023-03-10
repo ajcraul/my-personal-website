@@ -6,13 +6,14 @@
 }
 
 :root{
-    --color-primary: #303322;
-    --color-secondary: #eefcdf; 
+    --color-primary: #1e1f34;
+    --color-secondary: #4c4e73; 
     --color-white: #FFF;
     --color-black: #000;
-    --color-green-0: #7fb591;
-    --color-green-1: #bacd84;
-    --color-green-2: #e6f8b7;
+    --color-tertiary:#3a213a;
+    --color-lavender-0: #8e8dc4;
+    --color-lavender-1: #c9a4d7;
+    --color-lavender-2: #f4c6d9;
     --color-eggshell: #ede8ec;
     --br-sm-2: 14px;
     --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
@@ -56,30 +57,25 @@ section {
 .sec1{
     display: none;
     transform: translateY(0) scale (1);
-    background-color:rgba(161, 228, 38, 0.849);
 }
 
 .sec2{
     display: none;
     transform: translateY(0) scale (1);
-    background-color: slateblue;
 }
 .sec3{
     display: none;
     transform: translateY(0) scale (1);
-    background-color: rgba(18, 113, 23, 0.759);
 }
 
 .sec4{
     display: none;
     transform: translateY(0) scale (1);
-    background-color: rgb(160, 6, 132);
 }
 
 .sec5{
     display: none;
     transform: translateY(0) scale (1);
-    background-color: rgb(93, 8, 24);
 }
 
 .active {
@@ -113,7 +109,7 @@ section {
 .control{
     padding: 1rem;
     cursor: pointer;
-    background-color: var(--color-green-0);
+    background-color: var(--color-lavender-0);
     width: 55px;
     height: 55px;
     border-radius: 50%;
@@ -128,3 +124,58 @@ i{
     color: var(--color-eggshell);
     pointer-events: none;
 }
+
+/* Header-content*/
+.header-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+}
+.left-header{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/*
+.h-shape{
+    transition: all .4s ease-in-out;
+    width: 65%;
+    height: 100%;
+    background-color: var(--color-secondary);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;ß
+} 
+.image{
+    border-radius: var(--br-sm-2);
+    height:90%;
+    width: 68%;
+    margin-left: 4rem;
+    transition: all 4.s ease-in-out;
+    background-color: var(--color-black);
+}*/
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .4s ease-in-out;
+    filter: grayscale(100%);
+}
+.right-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 18rem;
+}
+.name{
+    font-size: 3rem;
+}
+span{
+    color: var(--color-secondary)
+}
+p{
+    margin: 1.5rem 0;
+    line-height: 2rem;
+}
+/*Independed content*/
